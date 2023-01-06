@@ -1,84 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <h1>REGISTER PAGE</h1>
 
-<form action="">
-
-    <div>
+    <form action="">
+      <div>
         <label for="firstname">First Name :</label>
-        <input type="text" class="firstname" id="firstname">
-    </div>
+        <input  class="inputs"
+        type="text" name="firstname" id="firstname" />
+      </div>
 
-    <div>
+      <div>
         <label for="lastname">Last Name :</label>
-        <input type="text" class="lastname" id="lastname">
-    </div>
+        <input class="inputs"
+        type="text" name="lastname" id="lastname" />
+      </div>
 
-    <div>
+      <div>
         <label for="email">Email :</label>
-        <input type="email" class="email" id="email">
-    </div>
+        <input class="inputs" type="email" class="email" id="email" />
+      </div>
 
-    <div>
+      <div>
         <label for="password">Password :</label>
-        <input type="password" class="password" id="password">
-    </div>
+        <input class="inputs" type="password" class="password" id="password" />
+      </div>
 
-    <div>
+      <div>
         <label for="dob">Day of Birth :</label>
-        <input type="date" class="dob" id="dob">
+        <input class="inputs" type="date" class="dob" id="dob" />
+      </div>
 
-    </div>
-
-    <div>
+      <div>
         <label for="phone">Phone :</label>
-        <input type="tel" class="phone" id="phone">
-
-    </div>
-    <div>
+        <input type="tel" class="inputs" name="phone" id="phone" />
+      </div>
+      <div class="adress">
         <label for="adress">Adress :</label>
-        <textarea name="" id="" cols="30" rows="5"></textarea>
-    </div>
+        <textarea class="inputs" name="adress" id="adress" cols="20" rows="5"></textarea>
+      </div>
 
-    <div>
+      <div>
         <label for="country">Country :</label>
-        <select name="country" id="country">
-            <option value="">Select Country</option>
-            <option value="tr">Turkey</option>
-            <option value="de">Germany</option>
-            <option value="nl">Netherland</option>
-            <option value="gr">Greece</option>
-            <option value="eng">UK</option>
-            <option value="usa">USA</option>
+        <select class="inputs" name="country" id="country">
+          <option value="">Select Country</option>
+          <option value="tr">Turkey</option>
+          <option value="de">Germany</option>
+          <option value="nl">Netherland</option>
+          <option value="gr">Greece</option>
+          <option value="eng">UK</option>
+          <option value="usa">USA</option>
         </select>
+      </div>
+
+       
+
+      <label class="gender-label" for="gender"  >Gender :</label>
         
-    </div>
 
-    <div>
-        <label for=""gender>Gender :</label>
+        <div class="gender-div">
+         
 
-        <input type="radio" name="male" id="male"> <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label>
 
-        <input type="radio" name="fmale" id="fmale">
+        <input type="radio" name="gender" id="fmale" />
         <label for="fmale">Fmale</label>
+      </div>
+
+
+      
+      
+      <div class="languages">
+        <label class="gender-label" for="languages">Languages</label>
         
-    </div>
+        <div class="lang-div">
+          <input type="checkbox" name="english" id="english" />
+          <label for="english">English </label>
+          <input type="checkbox" name="turkish" id="turkish" />
+          <label for="turkish">Turkish </label>
+          <input type="checkbox" name="languages" id="français" />
+          <label for="français">Français </label>
+        </div>
+      </div>
 
-    <div>
-        <input type="submit" value="SAVE">
-        <input type="reset" value="CLEAR">
-    </div>
-    
+      <div class="buttons">
+        <input class="btn" type="submit" value="SAVE" />
+        <input  class="btn" type="reset" value="CLEAR" />
+      </div>
     </form>
-
-</body>
+  </body>
 </html>
